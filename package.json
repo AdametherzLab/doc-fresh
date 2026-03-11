@@ -1,6 +1,6 @@
 {
   "name": "@adametherzlab/doc-fresh",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "CLI that detects stale library usage in your codebase by diffing your imports against live npm changelog data",
   "type": "module",
   "main": "./dist/index.js",
