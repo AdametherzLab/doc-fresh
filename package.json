@@ -1,0 +1,63 @@
+{
+  "name": "@adametherzlab/doc-fresh",
+  "version": "0.1.0",
+  "description": "CLI that detects stale library usage in your codebase by diffing your imports against live npm changelog data",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "dev": "bun run src/index.ts",
+    "test": "bun test",
+    "build": "tsc --build",
+    "prepublishOnly": "bun run build",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "bun-types": "latest",
+    "typescript": "^5.5.0"
+  },
+  "keywords": [
+    "typescript",
+    "bun",
+    "nodejs",
+    "cli",
+    "developer-tools",
+    "npm",
+    "static-analysis"
+  ],
+  "author": {
+    "name": "AdametherzLab",
+    "url": "https://github.com/AdametherzLab"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AdametherzLab/doc-fresh.git"
+  },
+  "homepage": "https://github.com/AdametherzLab/doc-fresh#readme",
+  "bugs": {
+    "url": "https://github.com/AdametherzLab/doc-fresh/issues"
+  },
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/AdametherzLab"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "sideEffects": false
+}
